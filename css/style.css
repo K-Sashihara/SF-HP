@@ -13,7 +13,7 @@ body {
 	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 15px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
-	background: #fff url(../images/bg.jpg) repeat center center/150px;	/*背景色*/
+	background: #fff url(/* ../images/bg.jpg */) repeat center center/150px;	/*背景色*/
 	-webkit-text-size-adjust: none;
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
@@ -47,20 +47,31 @@ a:hover {
 	position: fixed;top: 0px;z-index: -1;
 	width: 100%;
 	height: 100%;
-	background: url(../星光.jpg) no-repeat right top;	/*背景画像（古いブラウザ用）*/
-	background: url(../images/bg_dot.png) no-repeat left top / 60%, url(../星光.jpg) no-repeat right top / cover;	/*背景画像*/
+	/* background: url(../images/bg_dot.png) no-repeat right top;	/*背景画像（古いブラウザ用）*/
+	/* background: url(../images/bg_dot.png) no-repeat left top / 60%, url(../images/bg_main.jpg) no-repeat right top / cover;	/*背景画像*/
+	background: url(../sky.jpg) no-repeat right top/ cover
 }
 
 /*ヘッダー
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	height: 93%;	/*高さ。100%にするとウィンドウの高さ一杯になります。*/
+	height: 100%;	/*高さ。100%にするとウィンドウの高さ一杯になります。*/
 }
+
+/*追加*/
+.title {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+    padding: 250px 0 0;
+    color: rgb(255, 0, 0);
+}
+
 /*ロゴ画像*/
 header #logo img {
 	width: 20%;	/*幅*/
-	border-radius: 50%;	/*角丸のサイズ。50%なので円形になる。*/
+	border-radius: 50%;	 /*角丸のサイズ。50%なので円形になる。*/
 	position: fixed;	/*画面に対して固定表示*/
 	left: 5%;			/*ウィンドウに対して左から5%の場所に配置*/
 	top: -40px;			/*ウィンドウに対して上から-40pxの場所に配置*/
@@ -298,6 +309,15 @@ ul.disc {padding: 0em 25px 15px;list-style: disc;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:800px){
 
+/*追加*/
+.title {
+      font-size: 32px;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      padding: 80px 0 0;
+      color: rgb(255, 0, 0);
+    }
+
 /*その他
 ---------------------------------------------------------------------------*/
 body.s-n #sub,body.s-n #footermenu,.m-n {display: none;}
@@ -323,6 +343,17 @@ body {
 
 /*ヘッダー
 ---------------------------------------------------------------------------*/
+
+/*追加*/
+.title {
+      font-size: 28px;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      padding: 200px 10px 0;
+      color: red;
+    }
+
+
 /*ロゴ画像*/
 header #logo img {
 	position: fixed;
